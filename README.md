@@ -3,4 +3,4 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d3285ab169e5430f84ceaacaf56e3fdb)](https://www.codacy.com/app/carverh/PhysicsDiagrams?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zpChris/PhysicsDiagrams&amp;utm_campaign=Badge_Grade)
 
 Physics Application written in C#.
-Probably runs on Magick:tm:.
+Probably runs on Magick<sup>tm</sup>.
