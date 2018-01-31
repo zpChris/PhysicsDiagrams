@@ -111,6 +111,7 @@
     <Compile Include="PhysicsFunctions.cs" />
     <Compile Include="Mechanics.cs" />
     <Compile Include="FMA.cs" />
+    <Compile Include="Solver.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

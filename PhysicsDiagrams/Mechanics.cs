@@ -4,7 +4,5 @@ namespace PhysicsDiagrams
     public interface Mechanics : PhysicsFunctions
     {
 
-            
-
     }
 }
