@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 
 using UIKit;
 
@@ -26,6 +25,16 @@ namespace PhysicsDiagrams
             var vel = new EquationItem(50, 460, "Final Velocity", "vf = v0 + at");
             View.AddSubview(vel);
 
+
+            var solver = new ApproximationSolver();
+            double[] input = { 50, 25, -1 }; // 50 = 25a -> a = 2
+            Console.WriteLine(solver.Solve(input, 2));
+
+            input = new double[] { -1, 15, -1.5 }; // F = 15 * -1.5 -> F = -22.5
+            Console.WriteLine(solver.Solve(input, 0));
+
+            input = new double[] { 1422342.4, -1, 44332.6642 }; // 1422342.4 = m * 44332.6642 -> m = 32.08
+            Console.WriteLine(solver.Solve(input, 1));
         }
 
         public override void DidReceiveMemoryWarning()
