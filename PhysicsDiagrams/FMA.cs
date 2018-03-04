@@ -3,31 +3,31 @@ using System.Collections.Generic;
 
 namespace PhysicsDiagrams
 {
-    public class FMA
+    public class FMA : Mechanics
     {
 
-        double force;
-        double mass;
-        double acceleration;
-        string FMAEquation = "[force] = [mass] * [acceleration]";
+        double[] input;
+        bool friction = false;
 
-        public FMA(Dictionary<string, double> values)
+        // force (0), mass (1), acceleration (2)
+
+        public FMA(double force, double mass, double acceleration, bool friction)
         {
 
-            values.TryGetValue("force", out this.force);
-            values.TryGetValue("mass", out this.mass);
-            values.TryGetValue("acceleration", out this.acceleration);
+            input = new double[] { force, mass, acceleration };
+            this.friction = friction;
 
         }
 
-        public double Solve() {
+        public double GetFMAEquation()
+        {
 
-            Solver solver = new Solver(FMAEquation);
-            solver.solve("[mass]"); // This would be if you are solving for mass, normally a var would go here based on current values
-
-            /* Input variables into equation, do the computation IN SOLVER (still have to construct basics) */
-
-            return 1.0; // Placeholder
+            if (friction)
+            {
+                return 1.0; // ?
+            } else {
+                return input[1] * input[2] - input[0];
+            }
 
         }
     }

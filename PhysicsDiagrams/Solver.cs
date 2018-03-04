@@ -19,6 +19,8 @@ namespace PhysicsDiagrams
 
             /* Manipulate equation, solving for variable */
 
+
+
             return equation;
         }
 

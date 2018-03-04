@@ -8,11 +8,12 @@ namespace PhysicsDiagrams
     {
         private UIView itemView;
 
-        private const float width = 300;
-        private const float height = 200;
+        private float width = (float) UIScreen.MainScreen.Bounds.Width;
+        private float height = (float) UIScreen.MainScreen.Bounds.Height;
 
         public EquationItem(float x, float y, string label, string equation)
         {
+            
             itemView = new UIView(new RectangleF(x, y, width, height));
             itemView.BackgroundColor = UIColor.LightGray;
 
@@ -26,7 +27,6 @@ namespace PhysicsDiagrams
             itemEquation.Text = equation;
             itemView.AddSubview(itemEquation);
 
-            this.AddSubview(itemView);
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 namespace PhysicsDiagrams
 {
-    public interface PhysicsFunctions
+    public abstract class PhysicsFunctions
     {
 
     }

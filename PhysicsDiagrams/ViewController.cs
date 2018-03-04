@@ -16,6 +16,11 @@ namespace PhysicsDiagrams
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
 
+            for (int i = 0; i < /*equationlist.length*/; i++)
+            {
+                var equation[i] = new EquationItem(50, 50 + 200 * i; )
+            }
+
             var fma = new EquationItem(50, 50, "Newton's Second Law of Motion", "Fnet = ma");
             View.AddSubview(fma);
 
