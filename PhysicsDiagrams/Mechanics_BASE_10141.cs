@@ -1,8 +1,8 @@
 ﻿using System;
 namespace PhysicsDiagrams
 {
-    public class Mechanics
+    public interface Mechanics : PhysicsFunctions
     {
-        
+
     }
 }
