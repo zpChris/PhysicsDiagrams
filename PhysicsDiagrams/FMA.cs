@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PhysicsDiagrams
 {
-    public class FMA
+    public class FMA : Mechanics
     {
 
         double force;
